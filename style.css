@@ -49,6 +49,7 @@ input {
     background: transparent;
     padding: 10px;
     font-weight: 14px;
+    min-width: 100px;
 }
 
 button {
@@ -69,7 +70,10 @@ ul li {
     user-select: none;
     cursor: pointer;
     position: relative;
+    overflow-wrap: break-word;
 }
+
+/* word-wrap */
 
 ul li::before {
     content: '';
@@ -109,4 +113,10 @@ ul li span {
 ul li span:hover {
     background: #edeef0;
 
+}
+
+@media only screen and (max-width: 400px) {
+    button {
+        padding: 16px 20px;
+    }
 }

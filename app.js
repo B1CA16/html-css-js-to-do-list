@@ -37,3 +37,10 @@ function showTask(){
 }
 
 showTask();
+
+inputBox.addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        addTask();
+    }
+});
