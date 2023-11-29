@@ -73,8 +73,6 @@ ul li {
     overflow-wrap: break-word;
 }
 
-/* word-wrap */
-
 ul li::before {
     content: '';
     position: absolute;
